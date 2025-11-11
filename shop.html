@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SKULL FOOD™ | Shop Now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="Shop SKULL FOOD™: Rebellious, clean-label hot sauce, pickles, and jams. Find pricing, shipping details, and buy the Rebellion Line." />
+    <meta name="keywords" content="SKULL FOOD shop, buy hot sauce, clean label pickles, artisan jams, online store, price, shipping" />
+    <meta name="author" content="SKULL FOOD LLC" />
+
+    <style>
+        /* --- CORE GLOBAL STYLES (MATCHES LANDING PAGE) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-family: 'Helvetica Neue', sans-serif;
+            overflow-x: hidden;
+            overflow-y: auto;
+            /* Uses the same background image */
+            background-image: url('website-design-content-layout-graphic.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Container is wider for product display */
+        .container {
+            max-width: 1100px; 
+            margin: 3rem auto;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            position: relative;
+            /* Simple neon effect for the shop page title */
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #00ffff;
+        }
+
+        /* --- SHOP SPECIFIC STYLES --- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive 5-column layout */
+            gap: 30px;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: rgba(17, 17, 17, 0.7); /* Darker background */
+            border: 2px solid #00ffff; /* Cyan outline */
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5), 0 0 20px #ff00ff; /* Dual glow on hover */
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            border: 3px solid #ff00ff; /* Magenta border around image */
+        }
+
+        .product-card h3 {
+            font-size: 1.6rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #ff00ff; /* Magenta product title */
+            text-shadow: 0 0 5px rgba(255, 0, 255, 0.8);
+        }
+
+        .product-card p {
+            font-size: 1rem;
+            color: #ccc;
+            font-weight: normal;
+            text-shadow: none;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00ffff; /* Cyan price text */
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .buy-btn {
+            display: block;
+            padding: 12px 20px;
+            background: #ff00ff; /* Magenta buy button */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.2s ease, box-shadow 0.2s ease;
+            text-transform: uppercase;
+        }
+        .buy-btn:hover {
+            background: #00ffff; /* Cyan on hover */
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        }
+
+        /* --- SHIPPING & INFO STYLES --- */
+        .shipping-info {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(17, 17, 17, 0.7);
+            border: 1px dashed #ff00ff;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .shipping-info h2 {
+            color: #00ffff;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ff00ff;
+            padding-bottom: 0.5rem;
+        }
+        .shipping-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: normal;
+            color: #eee;
+        }
+        .shipping-info a {
+            color: #ff00ff;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .home-link:hover {
+            background: #00ffff;
+            color: #111;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SKULL FOOD™ REBELLION LINE</h1>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="reaper-sauce-placeholder.jpg" alt="Reaper Hot Sauce" />
+                <h3>REAPER HOT SAUCE</h3>
+                <p>Pure, intense heat with complex flavor. The ultimate rebellion against bland sauce. (5oz)</p>
+                <div class="price">$12.99</div>
+                <a href="#" class="buy-btn">BUY NOW</a> 
+            </div>
+
+            <div class="product-card">
+                <img src="inferno-pickles-placeholder.jpg" alt="Inferno Pickles" />
+                <h3>INFERNO PICKLES</h3>
+                <p>Crispy, spicy, and perfectly fermented clean-label pickles. Unapologetically bold. (32oz)</p>
+                <div class="price">$8.50</div>
+                <a href="#" class="buy-btn">BUY NOW</a> 
+            </div>
+
+            <div class="product-card">
+                <img src="phantom-jam-placeholder.jpg" alt="Phantom Jams" />
+                <h3>PHANTOM JAM</h3>
+                <p>Dark, unique fruit fusion, zero added sugar. Clean-label sweetness with a wild side. (10oz)</p>
+                <div class="price">$9.99</div>
+                <a href="#" class="buy-btn">BUY NOW</a> 
+            </div>
+
+            <div class="product-card">
+                <img src="ghost-rub-placeholder.jpg" alt="Ghost Rub" />
+                <h3>GHOST RUB</h3>
+                <p>A smoky, savory dry rub with a powerful heat finish. Perfect for grilling meat or veggies. (4oz)</p>
+                <div class="price">$7.50</div>
+                <a href="#" class="buy-btn">BUY NOW</a> 
+            </div>
+
+            <div class="product-card">
+                <img src="skull-pack-placeholder.jpg" alt="Skull Pack Bundle" />
+                <h3>THE FULL SKULL PACK</h3>
+                <p>Get all four: Reaper Sauce, Inferno Pickles, Phantom Jam, and Ghost Rub. Save money, join the rebellion.</p>
+                <div class="price">$34.99</div>
+                <a href="#" class="buy-btn">BUY BUNDLE</a> 
+            </div>
+
+        </div>
+
+        <div class="shipping-info">
+            <h2>SHIPPING & ORDER DETAILS</h2>
+            <p>
+                **Pricing:** All prices are listed in USD and do not include tax or shipping fees.
+            </p>
+            <p>
+                **Shipping:** We currently ship only within California. All orders are processed within **2-3 business days**. We use specialized, secure packaging to ensure product quality upon arrival. Shipping rates are calculated at checkout.
+            </p>
+            <p>
+                **Policies:** Due to the artisanal and perishable nature of our products, all sales are considered **final**. Please ensure your shipping address is correct before purchase. View our full 
+                <a href="#" target="_blank">Shipping & Return Policy</a> for more details.
+            </p>
+        </div>
+        
+        <a href="index.html" class="home-link">← BACK TO HOMEPAGE</a>
+    </div>
+    
+</body>
+</html>
